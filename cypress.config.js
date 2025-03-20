@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const { defineConfig } = require('cypress')
 
 module.exports = defineConfig({
@@ -8,3 +9,16 @@ module.exports = defineConfig({
     baseUrl: 'https://jsonplaceholder.typicode.com'
   }
 })
+=======
+const { defineConfig } = require('cypress');
+
+module.exports = defineConfig({
+  e2e: {
+    baseUrl: 'https://jsonplaceholder.typicode.com', // URL base para os testes de API
+    setupNodeEvents(on, config) {
+      // Nenhuma configuração adicional por enquanto
+      return config;
+    }
+  }
+});
+>>>>>>> c3c168c (Primeiro commit - Configuração inicial)
